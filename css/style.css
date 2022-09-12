@@ -1,0 +1,125 @@
+@font-face { font-family: 'Open Sans Regular'; src: url('../fonts/OpenSans.eot'); src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans.woff2') format('woff2'), url('../fonts/OpenSans.woff') format('woff'), url('../fonts/OpenSans.ttf') format('truetype'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Open Sans Semibold'; src: url('../fonts/OpenSans-Semibold.eot'); src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Semibold.woff2') format('woff2'), url('../fonts/OpenSans-Semibold.woff') format('woff'), url('../fonts/OpenSans-Semibold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Open Sans Bold'; src: url('../fonts/OpenSans-Bold.eot'); src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat Bold'; src: url('../fonts/Montserrat-Bold.eot'); src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Montserrat Regular'; src: url('../fonts/Montserrat-Regular.eot'); src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; font-display: swap; }
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Open Sans Regular'; font-size: 16px; line-height: 1.5; color: #000; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat Bold'; font-weight: bold; margin-bottom: 40px; }
+h2 { font-size: 40px; }
+p { font-family: 'Open Sans Regular'; font-weight: 400; color: #000; }
+img { max-width: 100%; vertical-align: middle; }
+a, a:hover, a:focus { text-decoration: none; color: #000; }
+a:hover { color: #27e9c6; }
+ul { list-style: none; margin: 0; padding: 0; }
+.text-center { text-align: center; }
+.common-spacing { padding: 50px 0; }
+.common-transition { -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 15px; }
+
+/*------Shap Section CSS Start------ */
+.shap-section { position: relative; }
+.shap-section .shape-divider-bottom { right: 0; bottom: 0; left: 0; position: absolute; overflow: hidden; pointer-events: none; -webkit-transform: scale(1); transform: scale(1); }
+.shap-section .shape-divider svg { fill: currentColor; -webkit-transform: scale(2); transform: scale(2); }
+.shap-section .text-contrast { color: #fff !important; }
+.shap-section .shape-divider-fluid-x>* { width: 100%; height: auto; }
+.shap-section .shape-divider-bottom>* { -webkit-transform-origin: top center; transform-origin: top center; }
+
+/*------Shap Section CSS Start------ */
+
+/*------Header Section CSS Start------ */
+.header-section { padding: 10px 0px; }
+.header-section .header-row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.header-section .logo { max-width: 80px; display: block; }
+.header-section .menu ul li { display: inline-block; vertical-align: middle; }
+.header-section .menu ul li:not(:last-child) { margin-right: 20px; }
+.header-section .menu ul li a { display: block; text-transform: uppercase; font-weight: 700; color: #111b24; }
+.header-section .menu ul li a:hover { color: #27e9c6; }
+.header-section .menu ul li:last-child a { background: #27e9c6; border: 2px solid transparent; border-radius: 50px; box-shadow: 100px 0 0 0 #27e9c6 inset, -100px 0 0 #27e9c6 inset; color: #fff; padding: 8px 24px; transform-origin: 50% 50% 0; font-weight: 600; }
+.header-section .menu ul li:last-child a:hover { background-color: transparent; border: 2px solid #27e9c6; box-shadow: 0 0 0 0 #27e9c6 inset, 0 0 0 #27e9c6 inset; color: #27e9c6; }
+
+/*------Header Section CSS End------ */
+
+/*------Hero Section CSS Start------ */
+.hero-section { background-color: #111b24; position: relative; height: calc(100vh - 102px); display: flex; align-items: center; justify-content: center; }
+.hero-section .pg-canvas { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; }
+.hero-section .hero-content { position: relative; }
+.hero-section .hero-content h1 { color: #fff; font-size: 60px; margin-bottom: 10px; }
+.hero-section .hero-content p { color: #fff; font-size: 20px; }
+.hero-section::before { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%; background-image: url(../image/network-bg.jpg); background-size: cover; background-position: center center; opacity: 0.2; background-attachment: fixed; }
+
+/*------Hero Section CSS End------ */
+
+/*------Who We Are Section CSS Start------ */
+.who-we-are-section .who-we-are-content { background-color: #f5f7f7; padding: 40px 40px; border-bottom-right-radius: 80px; }
+.who-we-are-section .who-we-are-content h2 { margin-bottom: 20px; }
+.who-we-are-section .who-we-are-content p { margin-bottom: 20px; }
+
+/*------Who We Are Section CSS End------ */
+
+/*------Our Approach Section CSS Start------ */
+.our-approach-section { background: url(../image/shap.png) no-repeat left center; margin-bottom: 50px; }
+.our-approach-section .our-approach-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; margin: 0 -15px; }
+.our-approach-section .our-approach-row .our-approach-colum { padding: 0 15px; }
+.our-approach-section .our-approach-row .our-approach-colum { width: 70%; }
+.our-approach-section .our-approach-row .our-approach-colum:first-child { width: 30%; }
+.our-approach-section .our-approach-row .our-approach-colum .content { padding: 40px; border-bottom-left-radius: 80px; background-color: #f5f7f7; -webkit-box-shadow: 15px 15px 0 0 #ecebea; box-shadow: -15px 15px 0 0 #ecebea; margin-right: 15px; text-align: right; }
+.our-approach-section .our-approach-row .our-approach-colum h2 { margin-bottom: 20px; }
+
+/*------Our Approach Section CSS Start------ */
+
+/*------What You Get Section CSS Start------ */
+.what-you-get-section .what-you-get-row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -15px; }
+.what-you-get-section .what-you-get-row .what-you-get-colum { width: 50%; padding: 15px; }
+.what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner { padding: 50px 20px; text-align: center; position: relative; border: 3px dotted #ddd; }
+.what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner h3 { margin: 15px 0 0 0; font-size: 24px; }
+.what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner .content { position: absolute; left: 0; right: 0; bottom: 0; top: 0; width: 100%; height: 100%; padding: 25px; display: flex; align-items: center; text-align: left; background-color: rgba(0, 0, 0, 0.9); -moz-transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); -ms-transform: scale(0); transform: scale(0); }
+.what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner .content p { color: #fff; }
+.what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner:hover .content { -moz-transform: scale(1); -webkit-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+
+/*------What You Get Section CSS End------ */
+
+/*------How We Are Unique Section CSS Start------ */
+.how-we-are-unique-section { background-color: #f5f7f7; padding-bottom: 80px; }
+.how-we-are-unique-section .how-we-are-unique-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 -15px; }
+.how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum { padding: 0 15px; }
+.how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum { width: 70%; }
+.how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum:first-child { width: 30%; }
+.how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum .content { padding: 40px; border-bottom-right-radius: 80px; background-color: #fff; -webkit-box-shadow: 15px 15px 0 0 #ecebea; box-shadow: 15px 15px 0 0 #ecebea; margin-right: 15px; }
+.how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum h2 { margin-bottom: 20px; }
+
+/*------How We Are Unique Section CSS End------ */
+
+/*------Clientele Section CSS Start------ */
+.clientele-section .clientele-grid-wrap { display: grid; grid-template-columns: repeat(6, 1fr); position: relative; }
+.clientele-section .clientele-grid-wrap .clientele-grid { padding: 10px 20px; text-align: center; }
+.clientele-section .clientele-grid-wrap .clientele-grid:not(:last-child) { border-right: 1px solid #f0f0f0; }
+
+/*------Clientele Section CSS End------ */
+
+/*------Lets Talk Section CSS Start------ */
+.lets-talk-section { background-color: #f5f7f7; padding-bottom: 100px; }
+.lets-talk-section .lets-talk-content { background-color: #27e9c6; border-radius: 10px; padding: 50px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; max-width: 775px; margin: 0 auto; }
+.lets-talk-section .lets-talk-content::before { content: ""; background-image: url(../image/cta-bg-imgae.png); background-repeat: no-repeat; background-size: cover; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; filter: brightness(0) saturate(100%) invert(56%) sepia(0) saturate(0) hue-rotate(221deg) brightness(90%) contrast(90%); }
+.lets-talk-section .lets-talk-content .inner { display: flex; justify-content: center; align-items: center; position: relative; z-index: 12; width: 100%; }
+.lets-talk-section .lets-talk-content .inner .sparator { margin: 0 30px; }
+.lets-talk-section .lets-talk-content .inner .sparator span { display: block; text-align: center; height: 70px; width: 70px; line-height: 60px; border: 4px solid rgba(26, 182, 157, .2); border-radius: 50%; font-size: 24px; font-weight: 700; color: #000; background-color: #fff; }
+.lets-talk-section .lets-talk-content .inner .content.text-end { text-align: right; }
+.lets-talk-section .lets-talk-content .inner .content span { font-size: 20px; }
+.lets-talk-section .lets-talk-content .inner .content h3 { margin: 0; }
+.lets-talk-section .lets-talk-content .inner .content h3 > a { font-size: 30px; }
+.lets-talk-section .lets-talk-content .inner .content h3 > a:hover { color: #fff; }
+
+/*------Lets Talk Section CSS End------ */
+
+/*------Footer Section CSS Staret------ */
+.footer-section { padding-bottom: 0; }
+.footer-section .footer-logo { display: inline-block; max-width: 100px; margin-bottom: 30px; }
+.footer-section .social-list li { margin: 0 10px; display: inline-block; }
+.footer-section .social-list li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; background-color: #27e9c6; color: #fff; border: 1px solid #27e9c6; }
+.footer-section .social-list li a:hover { color: #27e9c6; background-color: transparent; }
+.footer-section .copyright { padding: 15px 0; background-color: #111b24; text-align: center; margin-top: 40px; }
+.footer-section .copyright p { color: #fff; }
+
+/*------Footer Section CSS End------ */
