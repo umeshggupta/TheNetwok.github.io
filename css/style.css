@@ -29,7 +29,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 /*------Shap Section CSS Start------ */
 
 /*------Header Section CSS Start------ */
-.header-section { padding: 10px 0px; }
+.header-section { padding: 10px 0px; position: fixed; top: 0;right: 0; left: 0; background-color: #fff; z-index: 9999; }
 .header-section .header-row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .header-section .logo { max-width: 80px; display: block; }
 .header-section .menu ul li { display: inline-block; vertical-align: middle; }
