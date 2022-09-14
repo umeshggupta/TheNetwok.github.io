@@ -4,7 +4,7 @@
 @font-face { font-family: 'Montserrat Bold'; src: url('../fonts/Montserrat-Bold.eot'); src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; font-display: swap; }
 @font-face { font-family: 'Montserrat Regular'; src: url('../fonts/Montserrat-Regular.eot'); src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; font-display: swap; }
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* html { scroll-behavior: smooth; } */
 body { font-family: 'Open Sans Regular'; font-size: 16px; line-height: 1.5; color: #000; font-weight: 400; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat Bold'; font-weight: bold; margin-bottom: 40px; }
 h2 { font-size: 40px; }
@@ -29,18 +29,29 @@ ul { list-style: none; margin: 0; padding: 0; }
 /*------Shap Section CSS Start------ */
 
 /*------Header Section CSS Start------ */
-.header-section { padding: 10px 0px; position: fixed; top: 0;right: 0; left: 0; background-color: #fff; z-index: 9999; }
+.header-section { padding: 10px 0px; position: fixed; top: 0;right: 0; left: 0; background-color: #fff; z-index: 9999;border-bottom: 1px solid #e5e5e5;}
 .header-section .header-row { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .header-section .logo { max-width: 80px; display: block; }
 .header-section .menu ul li { display: inline-block; vertical-align: middle; }
 .header-section .menu ul li:not(:last-child) { margin-right: 20px; }
 .header-section .menu ul li a { display: block; text-transform: uppercase; font-weight: 700; color: #111b24; }
 .header-section .menu ul li a:hover { color: #27e9c6; }
-.header-section .menu ul li:last-child a { background: #27e9c6; border: 2px solid transparent; border-radius: 50px; box-shadow: 100px 0 0 0 #27e9c6 inset, -100px 0 0 #27e9c6 inset; color: #fff; padding: 8px 24px; transform-origin: 50% 50% 0; font-weight: 600; }
-.header-section .menu ul li:last-child a:hover { background-color: transparent; border: 2px solid #27e9c6; box-shadow: 0 0 0 0 #27e9c6 inset, 0 0 0 #27e9c6 inset; color: #27e9c6; }
+
 
 /*------Header Section CSS End------ */
 
+/*Menu Close Icon css Start*/
+.m-menu-btn{cursor:pointer;display:none;height:34px;width:30px;position:relative;margin-left:20px;}
+.m-menu-btn span{display:block;position:absolute;height:4px;width:100%;background:#27e9c6;border-radius:9px;opacity:1;left:0;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;}
+.m-menu-btn span:nth-child(1){top:5px;}
+.m-menu-btn span:nth-child(2),.m-menu-btn span:nth-child(3){top:15px;}
+.m-menu-btn span:nth-child(4){top:24px;}
+.m-menu-btn.m-menu-btn-ext span:nth-child(1){top:15px;width:0%;left:50%;}
+.m-menu-btn.m-menu-btn-ext span:nth-child(2){-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);}
+.m-menu-btn.m-menu-btn-ext span:nth-child(3){-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);}
+.m-menu-btn.m-menu-btn-ext span:nth-child(4){top:18px;width:0%;left:50%;}
+
+/*Menu Close Icon css End*/
 /*------Hero Section CSS Start------ */
 .hero-section { background-color: #111b24; position: relative; height: calc(100vh - 102px); display: flex; align-items: center; justify-content: center; }
 .hero-section .pg-canvas { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; }
@@ -60,11 +71,11 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /*------Our Approach Section CSS Start------ */
 .our-approach-section { background: url(../image/shap.png) no-repeat left center; margin-bottom: 50px; }
-.our-approach-section .our-approach-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; margin: 0 -15px; }
+.our-approach-section .our-approach-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse;  -ms-flex-wrap: wrap;flex-wrap: wrap; margin: 0 -15px; }
 .our-approach-section .our-approach-row .our-approach-colum { padding: 0 15px; }
 .our-approach-section .our-approach-row .our-approach-colum { width: 70%; }
 .our-approach-section .our-approach-row .our-approach-colum:first-child { width: 30%; }
-.our-approach-section .our-approach-row .our-approach-colum .content { padding: 40px; border-bottom-left-radius: 80px; background-color: #f5f7f7; -webkit-box-shadow: 15px 15px 0 0 #ecebea; box-shadow: -15px 15px 0 0 #ecebea; margin-right: 15px; text-align: right; }
+.our-approach-section .our-approach-row .our-approach-colum .content { padding: 40px; border-bottom-left-radius: 80px; background-color: #f5f7f7; -webkit-box-shadow: 15px 15px 0 0 #ecebea; box-shadow: -15px 15px 0 0 #ecebea; margin-left: 15px; text-align: right; }
 .our-approach-section .our-approach-row .our-approach-colum h2 { margin-bottom: 20px; }
 
 /*------Our Approach Section CSS Start------ */
@@ -82,7 +93,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /*------How We Are Unique Section CSS Start------ */
 .how-we-are-unique-section { background-color: #f5f7f7; padding-bottom: 80px; }
-.how-we-are-unique-section .how-we-are-unique-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 -15px; }
+.how-we-are-unique-section .how-we-are-unique-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap;flex-wrap: wrap; margin: 0 -15px; }
 .how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum { padding: 0 15px; }
 .how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum { width: 70%; }
 .how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum:first-child { width: 30%; }
@@ -92,9 +103,9 @@ ul { list-style: none; margin: 0; padding: 0; }
 /*------How We Are Unique Section CSS End------ */
 
 /*------Clientele Section CSS Start------ */
-.clientele-section .clientele-grid-wrap { display: grid; grid-template-columns: repeat(6, 1fr); position: relative; }
+.clientele-section .clientele-grid-wrap { position: relative; }
 .clientele-section .clientele-grid-wrap .clientele-grid { padding: 10px 20px; text-align: center; }
-.clientele-section .clientele-grid-wrap .clientele-grid:not(:last-child) { border-right: 1px solid #f0f0f0; }
+.clientele-section .clientele-grid img { display: inline-block; }
 
 /*------Clientele Section CSS End------ */
 
@@ -123,3 +134,87 @@ ul { list-style: none; margin: 0; padding: 0; }
 .footer-section .copyright p { color: #fff; }
 
 /*------Footer Section CSS End------ */
+@media only screen and (min-width: 1024px) {
+.header-section .menu ul li:last-child a { background: #27e9c6; border: 2px solid transparent; border-radius: 50px; box-shadow: 100px 0 0 0 #27e9c6 inset, -100px 0 0 #27e9c6 inset; color: #fff; padding: 8px 24px; transform-origin: 50% 50% 0; font-weight: 600; }
+.header-section .menu ul li:last-child a:hover { background-color: transparent; border: 2px solid #27e9c6; box-shadow: 0 0 0 0 #27e9c6 inset, 0 0 0 #27e9c6 inset; color: #27e9c6; }
+
+}
+@media only screen and (max-width: 1023px) {
+ .m-menu-btn {
+
+    display: block;
+ }
+ .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color:#dcfbf6;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    z-index: 9999;
+    padding: 20px;
+}
+.header-section .menu ul li:not(:last-child) {
+
+    display: block;
+    margin-right: 0px;
+}
+.header-section .menu ul li a {
+
+    padding: 10px;
+}
+
+}
+@media only screen and (max-width: 767px) { 
+
+    h2 {
+
+        font-size: 30px;
+    }
+    .hero-section .hero-content h1 {
+
+        font-size: 40px;
+    }
+    .what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner > img {
+
+        max-width: 80px;
+
+    }
+    .our-approach-section .our-approach-row .our-approach-colum:first-child, .how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum:first-child {
+
+        width: 100%;
+    }
+    .our-approach-section .our-approach-row .our-approach-colum, .how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum {
+
+        width: 100%;
+    }
+    .lets-talk-section .lets-talk-content .inner {
+
+       -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+    }
+    .lets-talk-section .lets-talk-content .inner .content.text-end, .lets-talk-section .lets-talk-content .inner .content {
+
+        text-align: center;
+    }
+    .lets-talk-section .lets-talk-content .inner .sparator {
+    margin: 15px 0;
+}
+.our-approach-section .our-approach-row .our-approach-colum .content, .how-we-are-unique-section .how-we-are-unique-row .how-we-are-unique-colum .content {
+
+    margin-top: 30px;
+    padding: 20px;
+}
+.what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner .content p {
+
+    font-size: 12px;
+}
+.what-you-get-section .what-you-get-row .what-you-get-colum .what-you-get-colum-inner h3 {
+
+        font-size: 20px;
+}
+
+}
