@@ -35,7 +35,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .header-section .menu ul li { display: inline-block; vertical-align: middle; }
 .header-section .menu ul li:not(:last-child) { margin-right: 20px; }
 .header-section .menu ul li a { display: block; text-transform: uppercase; font-weight: 700; color: #111b24; }
-.header-section .menu ul li a:hover { color: #27e9c6; }
+.header-section .menu ul li a:hover, .header-section .menu ul li a:focus { color: #27e9c6; }
 
 
 /*------Header Section CSS End------ */

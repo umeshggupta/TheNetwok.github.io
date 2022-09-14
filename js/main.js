@@ -79,6 +79,7 @@ $(document).ready(function () {
 $(".menu ul li a").on('click', function () {
     if ($(window).width() <= 1024) {
         $(".menu").hide();
+        $(".m-menu-btn").removeClass('m-menu-btn-ext');
     } else {
         $(".menu").show();
     }
